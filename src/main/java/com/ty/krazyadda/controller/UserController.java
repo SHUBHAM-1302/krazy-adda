@@ -20,12 +20,9 @@ public class UserController {
 	@Autowired
 	private UserService service;
 	
-	 
+	 // i m deliting this
 	
-	@PostMapping("/user")
-	public ResponseStructure<User> saveUser(@RequestBody User user) {
-		return service.saveUser(user);
-	}
+	
 	@GetMapping("/user")
 	public ResponseStructure<User> getUserById( @RequestParam int id)
 	{
